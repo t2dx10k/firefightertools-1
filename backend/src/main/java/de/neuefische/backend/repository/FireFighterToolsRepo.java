@@ -1,4 +1,4 @@
-package de.neuefische.backend;
+package de.neuefische.backend.repository;
 
 import de.neuefische.backend.model.Tool;
 import org.springframework.data.mongodb.repository.MongoRepository;
