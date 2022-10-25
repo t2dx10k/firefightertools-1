@@ -18,14 +18,13 @@ class HelloWorldControllerTest {
     MockMvc mockMvc;
 
     @Test
-    void someTest() throws Exception {
+    void sayHello_returns_hello() throws Exception {
         //GIVEN
 
         //WHEN & THEN
         mockMvc.perform(
-                        MockMvcRequestBuilders.get("/api/hello"))
+                      MockMvcRequestBuilders.get("/api/hello"))
                 .andExpect(status().is(200))
                 .andExpect(content().string("Hello World"));
     }
-
 }
