@@ -11,7 +11,6 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@TestPropertySource(properties = "spring.mongodb.embedded.version=3.5.5")
 @SpringBootTest
 @AutoConfigureMockMvc
 class HelloWorldControllerTest {
