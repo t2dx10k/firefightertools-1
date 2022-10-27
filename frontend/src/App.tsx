@@ -1,11 +1,14 @@
 import React, {useEffect, useState} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import axios from "axios";
+import {HashRouter, Route, Routes} from "react-router-dom";
+import MainPage from "./pages/MainPage";
+import useTool from "./hooks/useTool";
 
 function App() {
 
   const [helloMessage, setHelloMessage] = useState("")
+  // const {tool} = useTool();
 
   useEffect(()=> {
     fetchHelloMessage()
@@ -20,20 +23,14 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          {helloMessage}
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>{helloMessage}</p>
+
+        <HashRouter>
+          <Routes>
+            {/*<Route path={"/"} element={<MainPage tools={}/>}/>*/}
+          </Routes>
+        </HashRouter>
+
     </div>
   );
 }
