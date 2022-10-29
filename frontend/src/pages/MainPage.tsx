@@ -1,5 +1,4 @@
 import {Tool} from "../model/Tool";
-import ToolGallery from "../components/ToolGallery";
 
 type ToolsProps = {
     tools: Tool[]
@@ -9,12 +8,14 @@ export default function MainPage(props: ToolsProps) {
 
     return (
         <>
-            <h1>Test MainPage</h1>
-            <form>
-                <button></button>
-            </form>
-            <ToolGallery tools={props.tools}/>
+            <div className={"MainPage"}>
+                <h1>Test MainPage</h1>
+                <form>
+                    <button>Tools</button>
+                    <button>Quiz</button>
+                    <button>Login</button>
+                </form>
+            </div>
         </>
     )
-
 }

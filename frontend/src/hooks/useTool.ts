@@ -22,6 +22,5 @@ export default function useTool() {
             })
             .catch(() => console.error())
     }
-
     return {tool}
 }
