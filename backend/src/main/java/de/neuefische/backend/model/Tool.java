@@ -15,18 +15,18 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Tool {
 
     @Id
-    private String id;
+    private String _id;
     private String name;
     private String img;
     private String description;
-    private String link;
     private String video;
+    private String link;
     private String quizQuestion;
     private String choiceA;
     private String choiceB;
     private String choiceC;
-    private String trueChoice;
-    private String falseChoice;
+    private String correctChoice;
+    private String incorrectChoice;
     private String favorite;
 
 }

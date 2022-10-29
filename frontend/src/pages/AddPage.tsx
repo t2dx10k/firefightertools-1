@@ -8,8 +8,8 @@ export default function AddPage() {
                     <input type={"text"} placeholder={"Name"}/>
                     <input type={"text"} placeholder={"Image"}/>
                     <input type={"text"} placeholder={"Description"}/>
-                    <input type={"text"} placeholder={"Link"}/>
                     <input type={"text"} placeholder={"Video"}/>
+                    <input type={"text"} placeholder={"Link"}/>
                     <input type={"text"} placeholder={"Quiz Question"}/>
                     <input type={"text"} placeholder={"Choice A"}/>
                     <input type={"text"} placeholder={"Choice B"}/>

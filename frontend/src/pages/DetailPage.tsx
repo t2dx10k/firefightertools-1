@@ -13,6 +13,7 @@ export default function DetailPage(props: ToolsProps) {
                 <h6>{props.tool.name}</h6>
                 <h6>{props.tool.img}</h6>
                 <h6>{props.tool.description}</h6>
+                <h6>{props.tool.video}</h6>
                 <h6>{props.tool.link}</h6>
                 <form>
                     <button>Edit</button>

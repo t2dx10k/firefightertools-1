@@ -1,17 +1,17 @@
 export type Tool = {
 
-    id:string
+    _id:string
     name:string
     img:string
     description:string
-    link:string
     video:string
+    link:string
     quizQuestion:string
     choiceA:string
     choiceB:string
     choiceC:string
-    trueChoice:string
-    falseChoice:string
+    correctChoice:string
+    incorrectChoice:string
     favorite:string
 
 }
