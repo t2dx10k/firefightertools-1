@@ -8,7 +8,7 @@ import useTool from "./hooks/useTool";
 function App() {
 
   const [helloMessage, setHelloMessage] = useState("")
-  // const {tool} = useTool();
+  const {tool} = useTool();
 
   useEffect(()=> {
     fetchHelloMessage()
@@ -27,7 +27,7 @@ function App() {
 
         <HashRouter>
           <Routes>
-            {/*<Route path={"/"} element={<MainPage tools={}/>}/>*/}
+            <Route path={"/"} element={<MainPage tools={tool}/>}/>
           </Routes>
         </HashRouter>
 
