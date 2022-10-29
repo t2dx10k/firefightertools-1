@@ -23,6 +23,23 @@ public class ToolService {
         return repo.findAll();
     }
 
+    public Tool addTool(Tool postTool){
+        Tool newTool = Tool.builder()
+                ._id(idService.generateID())
+                .name(postTool.getName())
+                .img(postTool.getImg())
+                .description(postTool.getDescription())
+                .video(postTool.getVideo())
+                .link(postTool.getLink())
+                .quizQuestion(postTool.getQuizQuestion())
+                .choiceA(postTool.getChoiceA())
+                .choiceB(postTool.getChoiceB())
+                .choiceC(postTool.getChoiceC())
+                .correctChoice(postTool.getCorrectChoice())
+                .incorrectChoice(postTool.getIncorrectChoice())
+                .build();
 
+        return repo.save(newTool);
+    }
 
 }
