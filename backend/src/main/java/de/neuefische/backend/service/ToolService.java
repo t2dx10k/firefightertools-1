@@ -43,4 +43,7 @@ public class ToolService {
         return repo.save(newTool);
     }
 
+    public void deleteTool(String id) {
+        repo.deleteById(id);
+    }
 }
