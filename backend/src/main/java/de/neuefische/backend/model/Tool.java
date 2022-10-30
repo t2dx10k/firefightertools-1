@@ -27,6 +27,5 @@ public class Tool {
     private String choiceC;
     private String correctChoice;
     private String incorrectChoice;
-    private String favorite;
-
+    private String favourite;
 }

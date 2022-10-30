@@ -1,5 +1,4 @@
 export type Tool = {
-
     _id:string
     name:string
     img:string
@@ -12,6 +11,5 @@ export type Tool = {
     choiceC:string
     correctChoice:string
     incorrectChoice:string
-    favorite:string
-
+    favourite:string
 }
