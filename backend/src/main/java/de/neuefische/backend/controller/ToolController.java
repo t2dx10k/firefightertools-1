@@ -28,7 +28,7 @@ public class ToolController {
         return service.addTool(postTool);
     }
 
-    @DeleteMapping({"id"})
+    @DeleteMapping("{id}")
     public void deleteTool(@PathVariable String id){
         service.deleteTool(id);
     }
