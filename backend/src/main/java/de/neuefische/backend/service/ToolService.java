@@ -37,6 +37,7 @@ public class ToolService {
                 .choiceC(postTool.getChoiceC())
                 .correctChoice(postTool.getCorrectChoice())
                 .incorrectChoice(postTool.getIncorrectChoice())
+                .favourite(postTool.getFavourite())
                 .build();
 
         return repo.save(newTool);
