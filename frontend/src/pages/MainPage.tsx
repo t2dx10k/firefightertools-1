@@ -1,9 +1,6 @@
-import useTool from "../hooks/useTool";
 import {Link} from "react-router-dom";
 
 export default function MainPage() {
-
-    const {tool, deleteTool} = useTool();
 
     return (
         <>
