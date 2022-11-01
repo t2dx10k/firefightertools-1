@@ -1,11 +1,11 @@
 import {Tool} from "../model/Tool";
 import ToolGallery from "../components/ToolGallery";
 
-type ToolsProps = {
+type TPProps = {
     tools: Tool[]
 }
 
-export default function ToolPage(props: ToolsProps) {
+export default function ToolPage(props: TPProps) {
 
     return (
         <>

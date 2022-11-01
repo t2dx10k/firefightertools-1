@@ -1,10 +1,10 @@
 import {Tool} from "../model/Tool";
 
-type ToolCardProps = {
+type TCProps = {
     tool: Tool;
 }
 
-export default function ToolCard(props: ToolCardProps) {
+export default function ToolCard(props: TCProps) {
 
 
 

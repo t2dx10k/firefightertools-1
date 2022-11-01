@@ -17,6 +17,7 @@ export default function DetailPage(props: ToolsProps) {
                 <h6>{props.tool.link}</h6>
                 <form>
                     <button>Edit</button>
+                    <button>Delete</button>
                 </form>
             </div>
         </>

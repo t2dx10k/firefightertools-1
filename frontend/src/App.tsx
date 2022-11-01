@@ -4,11 +4,11 @@ import axios from "axios";
 import {HashRouter, Route, Routes} from "react-router-dom";
 import MainPage from "./pages/MainPage";
 import useTool from "./hooks/useTool";
+import ToolPage from "./pages/ToolPage";
 
 function App() {
 
   const [helloMessage, setHelloMessage] = useState("")
-  const {tool} = useTool();
 
   useEffect(()=> {
     fetchHelloMessage()
@@ -21,13 +21,17 @@ function App() {
         .catch((error) => console.log(error))
   }
 
+  const {tool, deleteTool} = useTool();
+
   return (
     <div className="App">
       <p>{helloMessage}</p>
 
         <HashRouter>
+
           <Routes>
-            <Route path={"/"} element={<MainPage tools={tool}/>}/>
+            <Route  path={"/"} element={<MainPage/>}/>
+            <Route path={"/toolpage/"} element={<ToolPage tools={tool}/>}/>
           </Routes>
         </HashRouter>
 

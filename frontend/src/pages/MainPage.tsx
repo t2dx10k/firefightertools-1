@@ -1,17 +1,23 @@
-import {Tool} from "../model/Tool";
+import ToolPage from "./ToolPage";
+import useTool from "../hooks/useTool";
+import {Link} from "react-router-dom";
 
-type ToolsProps = {
-    tools: Tool[]
-}
+export default function MainPage() {
 
-export default function MainPage(props: ToolsProps) {
+    const {tool, deleteTool} = useTool();
 
     return (
         <>
             <div className={"MainPage"}>
                 <h1>Test MainPage</h1>
                 <form>
-                    <button>Tools</button>
+
+                    <Link to="/toolpage/">
+                        <button type="button">
+                            Click Me!
+                        </button>
+                    </Link>
+                    <button onClick={(event) => <ToolPage tools={tool}/>}>Tools</button>
                     <button>Quiz</button>
                     <button>Login</button>
                 </form>

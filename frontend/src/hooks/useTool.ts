@@ -22,5 +22,12 @@ export default function useTool() {
             })
             .catch(() => console.error())
     }
-    return {tool}
+
+    const deleteTool = (id:string) =>{
+        axios.delete("/api/fft/" + id)
+            .then(getAllTools)
+            .catch((error) => console.error(error))
+    }
+
+    return {tool, deleteTool}
 }

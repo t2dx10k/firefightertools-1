@@ -1,10 +1,11 @@
 import {Tool} from "../model/Tool";
 
-type ToolsProps = {
-    tool: Tool
+type Props = {
+    tool: Tool;
+    deleteATool: (id:string) => void
 }
 
-export default function EditPage(props: ToolsProps) {
+export default function EditPage(props: Props) {
 
     return (
         <>
@@ -23,6 +24,7 @@ export default function EditPage(props: ToolsProps) {
                     <input type={"text"} placeholder={props.tool.correctChoice}/>
                     <input type={"text"} placeholder={props.tool.incorrectChoice}/>
                     <button>Save</button>
+                    <button onClick={()=>props.deleteATool(props.tool._id)}>Delete</button>
                 </form>
             </div>
         </>
