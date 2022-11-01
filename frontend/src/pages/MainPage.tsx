@@ -10,15 +10,15 @@ export default function MainPage() {
             <div className={"MainPage"}>
                 <h1>Test MainPage</h1>
                 <form>
-                    <Link to="/toolpage/">
+                    <Link to="/tools/">
                         <button type="button">Tools</button>
                     </Link>
 
-                    <Link to={"/quizpage/"}>
+                    <Link to={"/quiz/"}>
                         <button type="button">Quiz</button>
                     </Link>
 
-                    <Link to={"/loginpage"}>
+                    <Link to={"/login"}>
                         <button type="button">Login</button>
                     </Link>
                 </form>

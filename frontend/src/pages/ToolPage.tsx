@@ -1,5 +1,6 @@
 import {Tool} from "../model/Tool";
 import ToolGallery from "../components/ToolGallery";
+import {Link} from "react-router-dom";
 
 type TPProps = {
     tools: Tool[]
@@ -13,7 +14,9 @@ export default function ToolPage(props: TPProps) {
                 <h1>Test ToolPage</h1>
                 <ToolGallery tools={props.tools}/>
                 <form>
-                    <button>Add</button>
+                    <Link to={"/add/"}>
+                        <button type="button">Add</button>
+                    </Link>
                 </form>
             </div>
         </>
