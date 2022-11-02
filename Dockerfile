@@ -1,4 +1,4 @@
-FROM OPENJDK:17
+FROM openjdk:17
 
 LABEL maintainer="test@neuefische.de"
 

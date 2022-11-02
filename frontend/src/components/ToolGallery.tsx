@@ -2,12 +2,12 @@ import {Tool} from "../model/Tool";
 import {useState} from "react";
 import ToolCard from "./ToolCard";
 
-type TGProps = {
+type ToolGalleryProps = {
     tools: Tool[]
 }
 
 
-export default function ToolGallery(props: TGProps) {
+export default function ToolGallery(props: ToolGalleryProps) {
 
     const [search, setSearch] = useState("");
     const filteredTools = props.tools.filter((tool) => tool.name.toLowerCase().includes(search.toLowerCase()));
